@@ -1,0 +1,19 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+\draw (8.25,0.5) to[R,l={ \LARGE $R_2$}] (4.75,4);
+\draw (4.75,4) to[L,l={ \Large $jX_1$} ] (6.5,5.75);
+\draw (6.5,5.75) to[R,l={ \LARGE $R_1$}] (8.25,7.5);
+\draw (8.25,7.5) to[R,l={ \LARGE $R_3$}] (11.75,4);
+\draw (11.75,4) to[R,l={ \LARGE $R_4$}] (10,2.25);
+\draw (10,2.25) to[C,l={ \Large $-jX_4$}] (8.25,0.5);
+\node at (8.25,5.5) [circ] {};
+\node at (8.25,5.5) [circ] {};
+\node at (8.25,2) [circ] {};
+\draw (8.25,7.5) to[short] (8.25,5.5);
+\draw (8.25,2) to[short] (8.25,0.5);
+\draw (4.75,4) to[short] (2.5,4);
+\draw (11.75,4) to[short] (14.25,4);
+\draw (14.25,4) to[short] (14.25,-1.25);
+\draw (14.25,-1.25) to[sinusoidal voltage source, sources/symbol/rotate=auto] (2.5,-1.25);
+\draw (2.5,4) to[short] (2.5,-1.25);
+\end{circuitikz}
