@@ -1,0 +1,19 @@
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (3.25,9.75) to[R] (6,9.75);
+\draw (6,9.75) to[L,l={ \small $L=10mH$} ] (8.5,9.75);
+\draw (8.5,7) to[C,l={ \normalsize $C=10 \mu F$}] (8.5,9.75);
+\draw  (3.25,8.5) circle (0.25cm);
+\draw (3.25,9.75) to[short] (3.25,8.75);
+\draw (3.25,8.25) to[short] (3.25,7);
+\draw (3.25,7) to[short] (8.5,7);
+\node [font=\footnotesize] at (4.5,10.25) {R=10 $\Omega$};
+\draw [short] (8.75,9.75) -- (9.5,9.75);
+\draw [short] (8.75,7) -- (9.5,7);
+\draw [->, >=Stealth] (9.25,8.5) -- (9.25,9.75);
+\draw [short] (9.25,8) -- (9.25,7);
+\node [font=\normalsize] at (9.25,8.25) {$e_0$};
+\end{circuitikz}
+}%
+\label{fig:my_label}
